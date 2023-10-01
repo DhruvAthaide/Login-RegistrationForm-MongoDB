@@ -10,7 +10,7 @@ To install and run this project,
 
 You can download the zip file or Clone the Project Repository using Git with the below command:
 ```bash
-git clone 
+git clone https://github.com/DhruvAthaide/Login-RegistrationForm-MongoDB.git
 ```
 
 Then, open the terminal in the project file, and run the following command:
