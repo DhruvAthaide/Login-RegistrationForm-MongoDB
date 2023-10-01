@@ -13,7 +13,7 @@ You can download the zip file or Clone the Project Repository using Git with the
 git clone https://github.com/DhruvAthaide/Login-RegistrationForm-MongoDB.git
 ```
 
-Then, open the terminal in the project file, and run the following command:
+Then, open the terminal in the project directory, and run the following command:
 
 ```bash
   npm install
