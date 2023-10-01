@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-color: #0e1532;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            position: relative;
+            overflow: hidden;
+            width: 450px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-sizing: border-box;
+            animation: fadeIn 1s ease-in-out;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .login-container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            z-index: -1;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #187bff;
+            color: #fff;
+            border: none;
+            padding: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #145b9c;
+        }
+
+        .form-group a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .form-group a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" method="post" action="/login">
+            <div class="form-group">
+                <label for="name">Username:</label>
+                <input type="text" id="name" name="name" required autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="off" />
+            </div>
+            <div class="form-group">
+                <input type="submit" id="submit"/>
+            </div>
+            <div class="form-group">
+                <p align="center">Don't have an account? <a href="/signup">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
