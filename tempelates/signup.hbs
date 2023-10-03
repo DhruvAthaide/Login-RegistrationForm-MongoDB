@@ -102,7 +102,21 @@
             <p>Already have an Account? <a href="/login">Login</a></p>
         </div>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const form = document.querySelector('form');
+        const passwordInput = document.getElementById('password');
 
+        form.addEventListener('submit', function (event) {
+            const password = passwordInput.value;
+            
+            if (password.length < 7) {
+                event.preventDefault();
+                alert('Password must be at least 7 characters long.');
+            }
+        });
+    });
+</script>
 </body>
 
 </html>
