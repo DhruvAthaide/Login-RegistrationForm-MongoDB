@@ -22,8 +22,6 @@ Then, open the terminal in the project directory, and run the following command:
 Once, you have installed the dependancies for the project using NodeJS, Open your Mongo DataBase using the MongoDB Compass GUI Application click on "Create a Database" and enter the following details:
 ```bash
 Database Name: LoginSignup
-```
-```bash
 Collection Name: logincollections
 ```
 
